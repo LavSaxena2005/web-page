@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Student Information</title>
+    <title>Educational Qualification</title>
     <style>
         body {
 background-color: aqua;
@@ -58,7 +58,7 @@ background-color: yellow;
             <td>79.16%</td>
         </tr>
         <tr>
-            <td>2th</td>
+            <td>2</td>
             <td>12th</td>
             <td>ISC</td>
             <td>PCM+COMP</td>
@@ -69,14 +69,14 @@ background-color: yellow;
             <td>BTech 1st sem</td>
             <td>Amity</td>
             <td>IT</td>
-            <td>8.86 cgpa</td>
+            <td>8.86 sgpa</td>
         </tr>
         <tr>
             <td>4</td>
             <td>BTech 2nd sem</td>
             <td>Amity</td>
             <td>IT</td>
-            <td>8.36cgpa</td>
+            <td>8.36sgpa</td>
         </tr>
     </table>
 
