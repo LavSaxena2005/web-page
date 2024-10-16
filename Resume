@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Lav Saxena's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lav Saxena</h1>
+    <div class="contact-info">
+        <p>Email: Saxenalav2005@gmail.com</p>
+        <p>Phone: +91 8299877219</p>
+        <p>GitHub:  github.com/LavSaxena2005</p>
+        <p>LinkedIn:linkedin.com/in/lav-saxena-7995032b6</p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Information Technology</strong> | Amity University Rajasthan (2023-27) | CGPA: 8.53</li>
+            <li><strong>XII (ISC)</strong> | Modern Public School, Farrukhabad, Uttar Pradesh (2022-23)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java (Basic), C (Basic), Python (Basic)</li>
+            <li>Electronics: Arduino (Basic), PIR, DHT11, LDR, Soil Sensor, Buzzer, MQ135</li>
+            <li>GitHub, Creative Problem Solving, Team Building, Event Management</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>RAIoT Labs, Amity University (RAIoT Developer)</strong> (Feb 2024)</li>
+            <p>Working on home automation, RFID door locking systems, crop analysis, and surveillance systems.</p>
+
+            <li><strong>Cipherbyte Technology (C Programming)</strong> (May 2024 - June 2024)</li>
+            <p>Completed projects: Student Grade Management System, Bank Account Management System.</p>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Academic Projects</h2>
+        <ul>
+            <li><strong>Welcome Audio by PIR Sensor</strong> (September 2024)</li>
+            <p>Motion detection using PIR sensor triggers an Arduino-based audio playback system for a welcome message.</p>
+
+            <li><strong>Smart Farming Sensor Monitoring System</strong> (October 2024)</li>
+            <p>IoT and sensors for real-time monitoring of crop health and farm optimization using Arduino R4 and Blynk Dashboard.</p>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified in Smart Farming Sensor Monitoring for real-time crop analysis.</li>
+            <li>Digital Analytics & Regression (Cognitive Class)</li>
+            <li>Microsoft Azure AI Fundamentals: Generative AI (Microsoft)</li>
+            <li>C Training (The Spoken Tutorial Project, IIT Bombay)</li>
+            <li>Basic Java (HackerRank)</li>
+            <li>Participation in CodeQuest Contest #12 by Naukri Campus.</li>
+            <li>Participated in DSAI Hackathon, Meraz 4.0, IIT Bhilai.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <ul>
+            <li>Hindi</li>
+            <li>English</li>
+        </ul>
+    </div>
+
+</body>
+</html>
