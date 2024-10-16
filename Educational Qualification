@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Student Information</title>
+    <style>
+        body {
+background-color: aqua;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            !border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+            width: 60%;
+            margin: 20px 0;
+        }
+        .declaration {
+            margin-top: 20px;
+        }
+thead
+{
+background-color: red;
+}
+
+tbody
+{
+background-color: yellow;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1><u>Educational Qualification</u></h1>
+
+    <p><strong>Name:</strong> Lav Saxena </p>
+    <p><strong>Email:</strong> saxenalav2005@gmail.com</p>
+    <p><strong>Enrollment No.:</strong> A20405323004</p>
+
+    <h2><u>Educational Details</u></h2>
+
+    <table>
+        <tr>
+            <th>S.No.</th>
+            <th>Department</th>
+            <th>Board</th>
+            <th>Specialization</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10th</td>
+            <td>ICSE</td>
+            <td>Maths+Comp</td>
+            <td>79.16%</td>
+        </tr>
+        <tr>
+            <td>2th</td>
+            <td>12th</td>
+            <td>ISC</td>
+            <td>PCM+COMP</td>
+            <td>65.4%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>BTech 1st sem</td>
+            <td>Amity</td>
+            <td>IT</td>
+            <td>8.86 cgpa</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>BTech 2nd sem</td>
+            <td>Amity</td>
+            <td>IT</td>
+            <td>8.36cgpa</td>
+        </tr>
+    </table>
+
+</body>
+</html>
