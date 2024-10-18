@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>RAIoT Lab - Amity University Jaipur</title>
+    <style>
+        body {
+            background-color: lavender;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+            color: navy;
+        }
+        p {
+            font-size: 18px;
+            color: darkslategray;
+        }
+        ul {
+            list-style-type: square;
+            margin: 20px;
+        }
+        li {
+            font-size: 16px;
+        }
+        .lab-info {
+            width: 80%;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+        }
+        .project-examples {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightblue;
+        }
+        td {
+            background-color: #fff;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact p {
+            color: crimson;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>RAIoT Lab</h1>
+    <h2>Robotics and IoT Innovation Hub at Amity University Jaipur, Rajasthan</h2>
+
+    <div class="lab-info">
+        <p>The <strong>RAIoT Lab</strong> at <strong>Amity University Jaipur</strong> is a cutting-edge research and innovation space dedicated to exploring advancements in Robotics and the Internet of Things (IoT). This lab empowers students from multiple branches to design and develop real-world solutions using the latest technologies.</p>
+        
+        <p><strong>Eligible Students:</strong> The RAIoT Lab is open to students from the following branches:</p>
+        <ul>
+            <li>B.Tech Computer Science and Engineering (CSE)</li>
+            <li>B.Tech Information Technology (IT)</li>
+            <li>B.Tech Mechanical Engineering</li>
+            <li>B.Tech Electrical Engineering</li>
+            <li>B.Tech Electronics and Communication Engineering</li>
+            <li>Other related branches</li>
+        </ul>
+
+        <p class="project-examples"><strong>Innovative Projects:</strong> Students can develop a variety of innovative projects that contribute to different fields. Some examples include:</p>
+        <ul>
+            <li>Smart Google Glasses</li>
+            <li>Smart Irrigation Systems</li>
+            <li>Autonomous Drones</li>
+            <li>Robotic Arms for Industrial Use</li>
+            <li>IoT-based Home Automation Systems</li>
+            <li>Healthcare Monitoring Devices</li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Branch</th>
+                    <th>Lead Students</th>
+                    <th>Year of Development</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Smart Google Glasses</td>
+                    <td>Computer Science (CSE)</td>
+                    <td>Chetan Singh Chouhan,Dev Saini</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Smart Irrigation System</td>
+                    <td>Information Technology</td>
+                    <td>Aditiya Raj Singh, Lav Saxena</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Robotic Arm</td>
+                    <td>Computer Science(CSE),BCA</td>
+                    <td>Abhishek Thomas ,Pulkit Porwal</td>
+                    <td>2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="contact">
+        <p>For more information, visit the official website of <a href="https://raiot-aur.github.io/raiot/iot.html ">RAIoT Amity university</a>.</p>
+        <p>Contact us: <strong>raiotlab@amity.edu</strong></p>
+    </div>
+
+</body>
+</html>
