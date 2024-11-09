@@ -4,34 +4,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Enrollment Form</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #007bff; /* Blue background */
+            color: white; 
         }
+
         h1 {
             text-align: center;
-        }
+            color: white; 
+
         form {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             max-width: 800px;
             margin: auto;
+            background-color: #0056b3; 
+            padding: 20px;
+            border-radius: 8px;
         }
+
         label {
             font-weight: bold;
+            color: white;
         }
+
         input[type="text"], input[type="email"], input[type="password"], select {
             width: 100%;
             padding: 8px;
             margin: 5px 0;
+            background-color: #e1e1e1; 
+            border: none;
+            border-radius: 4px;
         }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+            outline: 2px solid #ffffff; 
+        }
+
         input[type="checkbox"], input[type="radio"] {
             margin-right: 5px;
         }
+
         .full-width {
             grid-column: span 2;
         }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745; /* Green button */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838; /* Darker green when hovered */
+        }
+
+        
+        .full-width input[type="checkbox"] {
+            width: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -42,18 +82,15 @@
         <label for="enroll">Student Enrollment:</label>
         <input type="text" id="enroll" name="enroll" required>
 
-  
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
 
-      
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob" required>
 
-      
         <label for="blood_group">Blood Group:</label>
         <select id="blood_group" name="blood_group" required>
             <option value="">Select Blood Group</option>
@@ -67,7 +104,6 @@
             <option value="O-">O-</option>
         </select>
 
-    
         <div class="full-width">
             <label>Gender:</label>
             <input type="radio" id="male" name="gender" value="Male" required>
@@ -78,7 +114,6 @@
             <label for="other">Other</label>
         </div>
 
-  
         <div class="full-width">
             <label for="hobbies">Hobbies:</label>
             <input type="checkbox" id="reading" name="hobbies" value="Reading">
@@ -91,11 +126,9 @@
             <label for="travel">Travel</label>
         </div>
 
-      
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-    
         <div class="full-width">
             <label for="programming_language">Preferred Programming Languages:</label><br>
             <input type="checkbox" id="python" name="programming_language[]" value="Python">
@@ -108,10 +141,10 @@
             <label for="javascript">JavaScript</label><br>
         </div>
 
-    
         <div class="full-width">
             <input type="submit" value="Enroll">
         </div>
     </form>
 </body>
 </html>
+
