@@ -1,20 +1,22 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Enrollment Form</title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #007bff; /* Blue background */
-            color: white; 
+            color: white;
         }
 
         h1 {
             text-align: center;
-            color: white; 
+            color: white;
+        }
 
         form {
             display: grid;
@@ -22,7 +24,7 @@
             gap: 15px;
             max-width: 800px;
             margin: auto;
-            background-color: #0056b3; 
+            background-color: #0056b3;
             padding: 20px;
             border-radius: 8px;
         }
@@ -32,17 +34,17 @@
             color: white;
         }
 
-        input[type="text"], input[type="email"], input[type="password"], select {
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
             width: 100%;
             padding: 8px;
             margin: 5px 0;
-            background-color: #e1e1e1; 
+            background-color: #e1e1e1;
             border: none;
             border-radius: 4px;
         }
 
-        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
-            outline: 2px solid #ffffff; 
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus, select:focus {
+            outline: 2px solid #ffffff;
         }
 
         input[type="checkbox"], input[type="radio"] {
@@ -67,18 +69,21 @@
             background-color: #218838; /* Darker green when hovered */
         }
 
-        
         .full-width input[type="checkbox"] {
             width: auto;
         }
 
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Student Enrollment Form</h1>
 
     <form action="submit_enrollment.php" method="post">
-    
         <label for="enroll">Student Enrollment:</label>
         <input type="text" id="enroll" name="enroll" required>
 
@@ -114,8 +119,8 @@
             <label for="other">Other</label>
         </div>
 
-        <div class="full-width">
-            <label for="hobbies">Hobbies:</label>
+        <div class="full-width checkbox-group">
+            <label>Hobbies:</label>
             <input type="checkbox" id="reading" name="hobbies" value="Reading">
             <label for="reading">Reading</label>
             <input type="checkbox" id="sports" name="hobbies" value="Sports">
@@ -129,16 +134,16 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <div class="full-width">
-            <label for="programming_language">Preferred Programming Languages:</label><br>
+        <div class="full-width checkbox-group">
+            <label for="programming_language">Preferred Programming Languages:</label>
             <input type="checkbox" id="python" name="programming_language[]" value="Python">
-            <label for="python">Python</label><br>
+            <label for="python">Python</label>
             <input type="checkbox" id="java" name="programming_language[]" value="Java">
-            <label for="java">Java</label><br>
+            <label for="java">Java</label>
             <input type="checkbox" id="cpp" name="programming_language[]" value="C++">
-            <label for="cpp">C++</label><br>
+            <label for="cpp">C++</label>
             <input type="checkbox" id="javascript" name="programming_language[]" value="JavaScript">
-            <label for="javascript">JavaScript</label><br>
+            <label for="javascript">JavaScript</label>
         </div>
 
         <div class="full-width">
@@ -147,4 +152,3 @@
     </form>
 </body>
 </html>
-
