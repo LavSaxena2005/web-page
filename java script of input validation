@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 6px;
+            margin: 4px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script type="text/javascript">
+        // Form validation code
+        function validate() {
+            if (document.myForm.Name.value == "") {
+                alert("Please provide your name!");
+                document.myForm.Name.focus();
+                return false;
+            }
+            if (document.myForm.EMail.value == "") {
+                alert("Please provide your Email!");
+                document.myForm.EMail.focus();
+                return false;
+            }
+            if (document.myForm.Zip.value == "" || isNaN(document.myForm.Zip.value) || document.myForm.Zip.value.length != 5) {
+                alert("Please provide a zip in the format #####.");
+                document.myForm.Zip.focus();
+                return false;
+            }
+            if (document.myForm.Country.value == "-1") {
+                alert("Please provide your country!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm" onsubmit="return(validate());">
+        <h2 style="text-align: center;">Registration Form</h2>
+        <table>
+            <tr>
+                <td align="right">Name</td>
+                <td><input type="text" name="Name" /></td>
+            </tr>
+            <tr>
+                <td align="right">College Name</td>
+                <td><input type="text" name="CollegeName" /></td>
+            </tr>
+            <tr>
+                <td align="right">Email</td>
+                <td><input type="text" name="EMail" /></td>
+            </tr>
+            <tr>
+                <td align="right">Zip Code</td>
+                <td><input type="text" name="Zip" /></td>
+            </tr>
+            <tr>
+                <td align="right">Country</td>
+                <td>
+                    <select name="Country">
+                        <option value="-1" selected>[choose yours]</option>
+                        <option value="1">USA</option>
+                        <option value="2">UK</option>
+                        <option value="3">INDIA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
