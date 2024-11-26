@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Monthly Installment Calculator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6f7ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 25px;
+            width: 350px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .calculator input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .calculator button {
+            width: 90%;
+            padding: 12px;
+            margin: 15px 0;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .calculator button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .calculator h2 {
+            margin-bottom: 20px;
+            color: #2e8b57;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Loan Installment Calculator</h2>
+        
+        <!-- Input with datalist for Loan Amount -->
+        <input type="number" id="loanAmount" list="loanAmounts" placeholder="Enter Loan Amount" />
+        <datalist id="loanAmounts">
+            <option value="50000">
+            <option value="100000">
+            <option value="200000">
+            <option value="500000">
+            <option value="1000000">
+        </datalist>
+
+        <!-- Input with datalist for Annual Interest Rate -->
+        <input type="number" id="annualInterestRate" list="interestRates" placeholder="Annual Interest Rate (%)" />
+        <datalist id="interestRates">
+            <option value="2.5">
+            <option value="3.0">
+            <option value="5.0">
+            <option value="6.5">
+            <option value="8.0">
+        </datalist>
+
+        <!-- Input with datalist for Loan Term -->
+        <input type="number" id="loanTermYears" list="loanTerms" placeholder="Loan Term (Years)" />
+        <datalist id="loanTerms">
+            <option value="5">
+            <option value="10">
+            <option value="15">
+            <option value="20">
+            <option value="30">
+        </datalist>
+
+        <button onclick="calculateInstallment()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateInstallment() {
+            const loanAmount = parseFloat(document.getElementById("loanAmount").value);
+            const annualInterestRate = parseFloat(document.getElementById("annualInterestRate").value);
+            const loanTermYears = parseFloat(document.getElementById("loanTermYears").value);
+
+            if (isNaN(loanAmount) || loanAmount <= 0) {
+                displayMessage("Please enter a valid loan amount.");
+                return;
+            }
+
+            if (isNaN(annualInterestRate) || annualInterestRate <= 0) {
+                displayMessage("Please enter a valid annual interest rate.");
+                return;
+            }
+
+            if (isNaN(loanTermYears) || loanTermYears <= 0) {
+                displayMessage("Please enter a valid loan term in years.");
+                return;
+            }
+
+            const monthlyInterestRate = annualInterestRate / 100 / 12;
+            const totalPayments = loanTermYears * 12;
+
+            const monthlyInstallment = 
+                (loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalPayments)) /
+                (Math.pow(1 + monthlyInterestRate, totalPayments) - 1);
+
+            displayMessage(`Monthly Installment: ₹${monthlyInstallment.toFixed(2)}`);
+        }
+
+        function displayMessage(message) {
+            document.getElementById("result").innerText = message;
+        }
+    </script>
+</body>
+</html>
